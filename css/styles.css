@@ -86,6 +86,8 @@ button {
   color: transparent;
   background: var(--color-neutral-light);
   border-radius: 5px;
+// add animation effect from animate.css plugin
+  animation-duration: 1.5s;
 }
 
 .space {
@@ -117,8 +119,8 @@ button {
   background: #FFFFFF;
   border-radius: 5px;
   font-size: var(--font-size-medium);
+  text-decoration: none;
 }
-
 /* Overlay */
 
 #overlay {
@@ -132,6 +134,9 @@ button {
   left: 0;
   right: 0;
   border-radius: 5px;
+// give overlay z index, if call overlay, this layer should always show infront.
+  position: absolute;
+ z-index: 1000;
 }
 
 .title {
