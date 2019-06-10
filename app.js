@@ -59,6 +59,8 @@ function addPhraseToDisplay(arr) {
     // If the character in the array is a letter and not a space the function should add the class “letter” to the list item.
     if (isLetter(charactor)) {
       li.className = "letter";
+    } else {
+      li.className = "space";
     }
     ul.appendChild(li);
   }
